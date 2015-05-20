@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="onLoggedOut">
+        <div class="login">
+          <h1>Login</h1>
+          <form>
+            <input type="email" placeholder="email" required>
+            <input type="password" placeholder="password" required>
+            <input type="button" value="Register" class="toRegisterBtn">
+            <input type="submit" value="Login">
+          </form>
+        </div>
+        <div class="register hidden">
+          <h1>Register</h1>
+          <form>
+            <input type="email" placeholder="email" required>
+            <input type="password" placeholder="password" required>
+            <input type="password" placeholder="password again" required>
+            <input type="button" value="Back" class="toLoginBtn">
+            <input type="submit" value="Register">
+          </form>
+        </div>
+      </div>
+      <div class="onLoggedIn">
+        <h1>Hello</h1>
+        <button class="doLogout">Logout</button>
+      </div>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
